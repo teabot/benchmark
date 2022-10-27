@@ -19,8 +19,8 @@ jobs:
           java-version: 17
       - name: Build and Verify
         run: mvn --no-transfer-progress --batch-mode -Dcheckstyle.skip -Dspotless.check.skip -Dlicense.skip=true verify
-      - name: release
-        uses: google-github-actions/release-please-action@v3
+      - uses: google-github-actions/release-please-action@v3
+        id: release
         with:
           release-type: maven
       - uses: shogo82148/actions-upload-release-asset@v1
