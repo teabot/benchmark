@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/teabot/benchmark/compare/v1.0.0...v1.0.1) (2022-10-27)
+
+
+### Bug Fixes
+
+* release 2 ([#6](https://github.com/teabot/benchmark/issues/6)) ([dbfeeac](https://github.com/teabot/benchmark/commit/dbfeeacba08ebca9c81678508549b492f7200c96))
+
 ## 1.0.0 (2022-10-27)
 
 
