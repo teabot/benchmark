@@ -19,6 +19,12 @@ jobs:
           java-version: 17
       - name: Build and Verify
         run: mvn --no-transfer-progress --batch-mode -Dcheckstyle.skip -Dspotless.check.skip -Dlicense.skip=true verify
-      - uses: google-github-actions/release-please-action@v3
+      - name: release
+        uses: google-github-actions/release-please-action@v3
         with:
           release-type: maven
+      - uses: shogo82148/actions-upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: package/target/openmessaging-benchmark-${{major}}.${{minor}}.${{patch}}.tar.gz
+        if: ${{ steps.release.outputs.release_created }}
