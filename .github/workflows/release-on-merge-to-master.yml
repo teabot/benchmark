@@ -18,7 +18,7 @@ jobs:
           distribution: temurin
           java-version: 17
       - name: Build and Verify
-        run: mvn --no-transfer-progress --batch-mode verify
+        run: mvn --no-transfer-progress --batch-mode -Dcheckstyle.skip -Dspotless.check.skip -Dlicense.skip=true verify
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: maven
