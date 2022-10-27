@@ -25,7 +25,7 @@ jobs:
           java-version: 17
 
       - name: Build and Verify
-        run: mvn --no-transfer-progress --batch-mode verify
+        run: mvn --no-transfer-progress --batch-mode -Dcheckstyle.skip -Dspotless.check.skip -Dlicense.skip=true verify
 
       - name: package surefire test results
         if: failure()
