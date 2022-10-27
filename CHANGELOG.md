@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/teabot/benchmark/compare/v1.0.2...v1.0.3) (2022-10-27)
+
+
+### Bug Fixes
+
+* add bin ([#16](https://github.com/teabot/benchmark/issues/16)) ([53888f6](https://github.com/teabot/benchmark/commit/53888f63cef16cd80fc82f7fe4ed9b6fbdae69e4))
+
 ## [1.0.2](https://github.com/teabot/benchmark/compare/v1.0.1...v1.0.2) (2022-10-27)
 
 
